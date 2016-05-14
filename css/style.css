@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, HelveticaNeue-Regular, "Helvetica Neue Regular", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  background: #333639;
+  max-width: 6em;
+  color: #c5cfd9;
+  flex-direction: column;
+}
+
+.nav_item {
+  font-size: 13px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav_item:hover {
+    background: #000;
+  cursor: pointer;
+}
+
+.nav_item-icon {
+  font-size: 2.5em;
+  padding: 4px;
+}
