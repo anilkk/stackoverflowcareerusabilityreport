@@ -61,11 +61,11 @@ body {
 }
 
 .banner-upload {
-    padding: 50px 5px 10px 10px;
+    padding: 50px 10px 10px 10px;
     text-align: left;
 }
 
-.banner-upload_header {
+.banner-upload_question {
     font-size: 1.2em;
     padding-bottom: 12px;
     color: #CCC;

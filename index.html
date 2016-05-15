@@ -35,7 +35,7 @@
                 <span>Place</span>
             </li>
         </ul>
-        <div class="edit-input text-center">
+        <!-- <div class="edit-input text-center">
             <h2 class="edit-input__header">Upload {company-name} Image</h2>
 
             <div class="banner-upload">
@@ -46,6 +46,22 @@
                     <span>Choose a photo</span>
                 </a>
                 <p> Recommended dimensions of <strong>1000x450</strong></p>
+            </div>
+        </div> -->
+        <div class="edit-input text-center">
+            <h2 class="edit-input__header">{company-name} Info</h2>
+            <div class="banner-upload">
+                <h3 class="banner-upload_question">Where can we find your website?</h3>
+            </div>
+            <div class="banner-upload">
+                <h3 class="banner-upload_question">Where can we find your Facebook page?</h3>
+                <label for="facebook-slug">https://www.facebook.com/</label>
+                <input id="facebook-slug" type="text" name="facebook" ng-model="widget.model.Facebook" placeholder="ExampleCompany" class="ng-pristine ng-valid ng-empty ng-touched">
+            </div>
+            <div class="banner-upload">
+                <h3 class="banner-upload_question">Where can we find your Twitter page?</h3>
+                <label for="twitter-slug">https://twitter.com/</label>
+                <input id="twitter-slug" type="text" name="twitter" ng-model="widget.model.Twitter" ng-pattern="/^@?[A-Za-z0-9_]{1,15}$/" placeholder="ExampleCompany" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern">
             </div>
         </div>
     </div>
