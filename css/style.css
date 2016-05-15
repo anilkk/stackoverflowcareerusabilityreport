@@ -1,29 +1,81 @@
 body {
-  font-family: Arial, HelveticaNeue-Regular, "Helvetica Neue Regular", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+    font-family: Arial, HelveticaNeue-Regular, "Helvetica Neue Regular", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+}
+
+.main {
+    display: flex;
 }
 
 .nav {
-  list-style: none;
-  display: flex;
-  background: #333639;
-  max-width: 6em;
-  color: #c5cfd9;
-  flex-direction: column;
+    list-style: none;
+    display: flex;
+    background: #333639;
+    max-width: 6em;
+    color: #c5cfd9;
+    flex-direction: column;
 }
 
 .nav_item {
-  font-size: 13px;
-  padding: 20px;
-  text-align: center;
-  text-transform: uppercase;
+    font-size: 13px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .nav_item:hover {
-    background: #000;
-  cursor: pointer;
+    background: #222426;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav_item--active {
+    background: #222426;
 }
 
 .nav_item-icon {
-  font-size: 2.5em;
-  padding: 4px;
+    font-size: 2.5em;
+    padding: 4px;
+}
+
+.edit-input {
+    background: #222426;
+    min-width: 250px;
+    max-width: 250px;
+    color: #fff;
+}
+
+.edit-input__header {
+    padding: 10px 5px;
+    background: #585858;
+}
+
+.file-upload {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    max-width: 120px;
+}
+
+.banner-upload {
+    padding: 50px 5px 10px 10px;
+    text-align: left;
+}
+
+.banner-upload_header {
+    font-size: 1.2em;
+    padding-bottom: 12px;
+    color: #CCC;
+}
+
+.banner-upload-link {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.banner-upload-link__icon {
+    vertical-align: middle;
 }
