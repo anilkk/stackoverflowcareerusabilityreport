@@ -2,6 +2,10 @@ body {
     font-family: Arial, HelveticaNeue-Regular, "Helvetica Neue Regular", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
 .main {
     display: flex;
 }
@@ -78,4 +82,37 @@ body {
 
 .banner-upload-link__icon {
     vertical-align: middle;
+}
+
+.about-company-list {
+    display: flex;
+}
+
+.about-company-list>li {
+    padding: 0 10px;
+}
+
+.technology-stack-list {
+    display: flex;
+}
+
+.technology-stack-list>li {
+    padding: 0 10px;
+}
+
+
+/* Editor style starts here */
+
+.editor {
+    display: flex;
+}
+
+.left-panel {
+    flex: none;
+    min-width: 300px;
+    background: #333639;
+}
+
+.career-page {
+    margin-left: 20px;
 }
