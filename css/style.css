@@ -6,51 +6,94 @@ ul {
     list-style: none;
 }
 
-.main {
+/* Editor style starts here */
+
+.editor {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.editor {
     display: flex;
 }
 
-.nav {
-    list-style: none;
-    display: flex;
+.menu {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    bottom: 0;
+    width: 90px;
     background: #333639;
-    max-width: 6em;
     color: #c5cfd9;
-    flex-direction: column;
 }
 
-.nav_item {
+.nav-item {
     font-size: 13px;
-    padding: 20px;
+    margin-top: 0 !important;
+    padding: 10px 5px;
+    color: #c5cfd9;
     text-align: center;
     text-transform: uppercase;
 }
 
-.nav_item:hover {
+.nav-item:hover,
+.nav-item.active {
     background: #222426;
     cursor: pointer;
     color: #fff;
 }
 
-.nav_item--active {
+.left-panel {
+    flex: none;
+    min-width: 300px;
+    background: #333639;
+}
+
+.career-page {
+    margin-left: 20px;
+}
+
+
+/* Override */
+
+.tab-content {
+    position: absolute;
+    top: 0;
+    left: 90px;
     background: #222426;
+    min-width: 280px;
+    bottom: 0;
 }
 
-.nav_item-icon {
-    font-size: 2.5em;
-    padding: 4px;
+.nav-tabs {
+    border: none;
 }
 
-.edit-input {
-    background: #222426;
-    min-width: 250px;
-    max-width: 250px;
-    color: #fff;
+.nav-tabs > li {
+    border: none;
 }
 
-.edit-input__header {
-    padding: 10px 5px;
-    background: #585858;
+.nav-tabs > li > a {
+    color: #c5cfd9;
+    border: none;
+}
+
+.nav-tabs > li > a:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    background-color: transparent;
+    border: none;
+    color: #c5cfd9;
 }
 
 .file-upload {
@@ -84,35 +127,27 @@ ul {
     vertical-align: middle;
 }
 
-.about-company-list {
-    display: flex;
-}
-
-.about-company-list>li {
-    padding: 0 10px;
+.landing-page {
+    position: absolute;
+    top: 65px;
+    left: 370px;
+    bottom: 0;
+    overflow: scroll;
 }
 
 .technology-stack-list {
     display: flex;
+    justify-content: center;
 }
 
 .technology-stack-list>li {
     padding: 0 10px;
 }
 
-
-/* Editor style starts here */
-
-.editor {
+.about-company-list {
     display: flex;
 }
 
-.left-panel {
-    flex: none;
-    min-width: 300px;
-    background: #333639;
-}
-
-.career-page {
-    margin-left: 20px;
+.about-company-list>li {
+    padding: 0 10px;
 }

@@ -14,19 +14,15 @@
 </head>
 
 <body ng-app="stackoverflowApp">
-    <!--  <div ng-controller="TabsDemoCtrl">
-        <uib-tabset active="active" vertical="true">
-            <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
-                {{tab.content}}
-            </uib-tab>
-        </uib-tabset>
-    </div> -->
+    <div>
+        <img src="img/logo.png" alt="stackoverflow" height="50px">
+    </div>
     <div class="editor">
-        <div class="left-panel">
-            <div ng-include="'view/leftPanel.html'"></div>
+        <div class="menu">
+            <div ng-include="'view/menu.html'"></div>
         </div>
-        <div class="career-page container">
-            <div ng-include="'view/career.html'" class="row"></div>
+        <div class="landing-page">
+            <div ng-include="'view/career.html'"></div>
         </div>
     </div>
 </body>
